@@ -1,8 +1,8 @@
 obs:
   comment-with-api:
-    reuns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      -name: Crate comment with API
+      -name: Create comment with API
       run: |
         gh api -X POST \
           http://api.github.com/repo/${ORGANIZATION}/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments \
